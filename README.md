@@ -54,14 +54,10 @@ tic-tac-toe-symbol-recognition/
 ├── dataset/
 │   ├── train/
 │   └── test/
-│
-├── docs/
-│   └── Deep Learning with NLP Plan.pdf
-│
+|
 ├── notebooks/
-│   ├── CNN_classification_blanck_circle_nought.ipynb
-│   └── trainforcnn.ipynb
-
+│   └── CNN_classification_blanck_circle_nought.ipynb
+│   
 ├── requirements.txt
 └── README.md
 ```

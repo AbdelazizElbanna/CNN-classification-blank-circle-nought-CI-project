@@ -1,48 +1,129 @@
-# Tic-Tac-Toe Symbol Recognition using CNN
+# Tic-Tac-Toe Symbol Recognition using CNN 
 
-This project is a computer vision image classification task that uses a Convolutional Neural Network (CNN) to recognize individual Tic-Tac-Toe board cells.
+A Computer Vision project that uses a Convolutional Neural Network (CNN) to classify individual Tic-Tac-Toe cells into three categories:<br>
+**🔲 Blank**, **⭕**, or **❌**.
 
-The model classifies each cell into one of three classes:
+---
 
-- Blank: empty cell
-- Circle: O symbol
-- Nought: X symbol
+## 📌 Project Overview
 
-## Dataset
+This project focuses on building an image classification model that can recognize the content of a single Tic-Tac-Toe cell.
 
-The dataset contains 600 grayscale images with a size of 128x128 pixels.
+The model predicts one of the following:
+* 🟩 **Blank** → Empty cell
+* ⭕ **Circle** → 'O' symbol
+* ❌ **Nought** → 'X' symbol
+
+---
+
+## 🗂 Dataset
+
+The dataset consists of **600 grayscale images** (128x128 pixels), equally distributed across three classes:
 
 | Class | Train | Test | Total |
-|---|---:|---:|---:|
+| :--- | :---: | :---: | :---: |
 | Blank | 160 | 40 | 200 |
 | Circle | 160 | 40 | 200 |
 | Nought | 160 | 40 | 200 |
-| Total | 480 | 120 | 600 |
+| **Total** | **480** | **120** | **600** |
 
-The dataset includes hand-drawn variations, different line weights, and slightly off-center symbols to simulate real-world conditions.
+**📌 Features:**
+* Hand-drawn variations.
+* Different line thickness.
+* Slightly off-centered symbols.
 
-## Model
+---
 
-The project uses a custom CNN architecture built with PyTorch.
+## 🧠 Model Architecture
 
-Main steps:
+A Convolutional Neural Network (CNN) is used to extract features from images and classify them.
 
-1. Load the dataset using ImageFolder
-2. Apply image preprocessing
-3. Train the CNN model
-4. Evaluate the model on the test set
+### Main Steps:
+1. Load dataset using `ImageFolder`.
+2. Apply preprocessing & normalization.
+3. Train CNN model.
+4. Evaluate on test set.
 
-## Tools and Libraries
+---
 
-- Python
-- PyTorch
-- Torchvision
-- Google Colab / Jupyter Notebook
-
-## Project Structure
+## 📁 Project Structure
 
 ```text
-notebooks/
-dataset/
-requirements.txt
-README.md
+tic-tac-toe-symbol-recognition/
+│
+├── dataset/
+│   ├── train/
+│   └── test/
+│
+├── docs/
+│   └── Deep Learning with NLP Plan.pdf
+│
+├── notebooks/
+│   ├── CNN_classification_blanck_circle_nought.ipynb
+│   └── trainforcnn.ipynb
+
+├── requirements.txt
+└── README.md
+```
+## ⚙️ Installation & Requirements
+
+Make sure you have Python installed, then install the required libraries by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 📦 Libraries Used
+
+The project uses the following libraries:
+
+- torch
+- torchvision
+- numpy
+- matplotlib
+- pillow
+- jupyter
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd tic-tac-toe-symbol-recognition
+```
+
+### 3. Open the main notebook
+
+```text
+notebooks/CNN_classification_blanck_circle_nought.ipynb
+```
+
+### 4. Run all cells
+
+Run the notebook cells to train and test the CNN model.
+
+---
+
+## 💡 Future Improvements
+
+- Improve model accuracy
+- Add real-time detection using camera input
+- Deploy the model as a web or mobile application
+
+---
+
+## 👥 Credits
+
+- **@AbdelazizElbanna** — Project author and CNN developer  
+- **@Jana-Hazem101** — Repository setup, structure, and documentation
+
+---
+⭐ If you find this repository useful, feel free to star it.

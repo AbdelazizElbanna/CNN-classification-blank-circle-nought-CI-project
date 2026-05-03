@@ -18,14 +18,14 @@ The model predicts one of the following:
 
 ## 🗂 Dataset
 
-The dataset consists of **600 grayscale images** (128x128 pixels), equally distributed across three classes:
+The dataset consists of **images** (128x128 pixels), equally distributed across three classes:
 
-| Class | Train | Test | Total |
-| :--- | :---: | :---: | :---: |
-| Blank | 160 | 40 | 200 |
-| Circle | 160 | 40 | 200 |
-| Nought | 160 | 40 | 200 |
-| **Total** | **480** | **120** | **600** |
+| Class |
+| :--- |
+| Blank |
+| Circle |
+| Nought |
+
 
 **📌 Features:**
 * Hand-drawn variations.
